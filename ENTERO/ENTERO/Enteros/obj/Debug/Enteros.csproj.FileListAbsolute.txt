@@ -7,3 +7,12 @@ D:\GESTION DE LA CONFIGURACION\ENTERO\ENTERO\Enteros\obj\Debug\Enteros.Propertie
 D:\GESTION DE LA CONFIGURACION\ENTERO\ENTERO\Enteros\obj\Debug\Enteros.csproj.GenerateResource.Cache
 D:\GESTION DE LA CONFIGURACION\ENTERO\ENTERO\Enteros\obj\Debug\Enteros.exe
 D:\GESTION DE LA CONFIGURACION\ENTERO\ENTERO\Enteros\obj\Debug\Enteros.pdb
+C:\Users\Many\Desktop\GC\ENTERO\ENTERO\Enteros\bin\Debug\Enteros.exe.config
+C:\Users\Many\Desktop\GC\ENTERO\ENTERO\Enteros\obj\Debug\Enteros.exe
+C:\Users\Many\Desktop\GC\ENTERO\ENTERO\Enteros\obj\Debug\Enteros.pdb
+C:\Users\Many\Desktop\GC\ENTERO\ENTERO\Enteros\bin\Debug\Enteros.exe
+C:\Users\Many\Desktop\GC\ENTERO\ENTERO\Enteros\bin\Debug\Enteros.pdb
+C:\Users\Many\Desktop\GC\ENTERO\ENTERO\Enteros\obj\Debug\Enteros.csprojResolveAssemblyReference.cache
+C:\Users\Many\Desktop\GC\ENTERO\ENTERO\Enteros\obj\Debug\Enteros.frmEnteros.resources
+C:\Users\Many\Desktop\GC\ENTERO\ENTERO\Enteros\obj\Debug\Enteros.Properties.Resources.resources
+C:\Users\Many\Desktop\GC\ENTERO\ENTERO\Enteros\obj\Debug\Enteros.csproj.GenerateResource.Cache

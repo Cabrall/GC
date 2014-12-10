@@ -35,7 +35,6 @@ namespace Enteros.Negocio
 
         //////////////////////////////////////////////...................
 
-
         public bool EsPar()
         {
 
@@ -176,6 +175,27 @@ namespace Enteros.Negocio
             n = this.obtenerPares(n);
             set(n);
             return  this.sumarDigitos(n)/cantidadDigitos();    
+        }
+        public Int32 OrdenarMenoMayor()
+        {
+            Int32 ordenado = 0, m = numeroentero;
+            Int32 n =0, mod=0, menor=10;
+            while (m > 0) { 
+                n=m;
+                while(n>0){
+                    mod = n % 10;
+                    n = n / 10;
+                    if (menor >= mod)
+                        menor = mod;
+                }
+                ordenado = ordenado * 10 + menor;
+                m = this.eliminarUnDigito(m, menor);
+                menor = 10;
+            }
+            return ordenado;
+        }
+        public Int32 OrdenarMayorMenor(){
+            return this.invertir(OrdenarMenoMayor());
         }
         public string enletras()
         {// many \\  
@@ -341,6 +361,20 @@ namespace Enteros.Negocio
             }
             return Num2Text;
 
+        }
+        private Int32 eliminarUnDigito(Int32 n, Int32 i) {
+            Int32 mod = 0;
+            Int32 num = 0;
+            bool t=true ;
+            while(n>0){
+                mod = n % 10;
+                n = n / 10;
+                if (mod == i && t == true)
+                    t = false;
+                else
+                    num=num * 10 + mod;
+            }
+            return num;
         }
     }
 }

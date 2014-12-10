@@ -30,8 +30,6 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.eNTEROToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.vECTORToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cONJUNTOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.esPrimoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.esParToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.esCapicuaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,10 +44,12 @@
             this.ordenarDeMayorAMenorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ordenarDeMenorAMayorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.convertirUnNumeroALiteralToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vECTORToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONJUNTOToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblIntroduzca = new System.Windows.Forms.Label();
-            this.txbIntroduzcaNumero = new System.Windows.Forms.TextBox();
             this.lblResultado = new System.Windows.Forms.Label();
+            this.txbIntroduzcaNumero = new System.Windows.Forms.TextBox();
+            this.lblIntroduzca = new System.Windows.Forms.Label();
             this.lblNumLetras = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -87,18 +87,6 @@
             this.eNTEROToolStripMenuItem.Name = "eNTEROToolStripMenuItem";
             this.eNTEROToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
             this.eNTEROToolStripMenuItem.Text = "ENTERO";
-            // 
-            // vECTORToolStripMenuItem
-            // 
-            this.vECTORToolStripMenuItem.Name = "vECTORToolStripMenuItem";
-            this.vECTORToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
-            this.vECTORToolStripMenuItem.Text = "VECTOR";
-            // 
-            // cONJUNTOToolStripMenuItem
-            // 
-            this.cONJUNTOToolStripMenuItem.Name = "cONJUNTOToolStripMenuItem";
-            this.cONJUNTOToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
-            this.cONJUNTOToolStripMenuItem.Text = "CONJUNTO";
             // 
             // esPrimoToolStripMenuItem
             // 
@@ -183,20 +171,24 @@
             // eliminarDigitosRepetidosToolStripMenuItem
             // 
             this.eliminarDigitosRepetidosToolStripMenuItem.Name = "eliminarDigitosRepetidosToolStripMenuItem";
-            this.eliminarDigitosRepetidosToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
+            this.eliminarDigitosRepetidosToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
             this.eliminarDigitosRepetidosToolStripMenuItem.Text = "Eliminar Digitos Repetidos";
             // 
             // ordenarDeMayorAMenorToolStripMenuItem
             // 
+            this.ordenarDeMayorAMenorToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ordenarDeMayorAMenorToolStripMenuItem.Name = "ordenarDeMayorAMenorToolStripMenuItem";
-            this.ordenarDeMayorAMenorToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
+            this.ordenarDeMayorAMenorToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
             this.ordenarDeMayorAMenorToolStripMenuItem.Text = "Ordenar de Mayor a Menor";
+            this.ordenarDeMayorAMenorToolStripMenuItem.Click += new System.EventHandler(this.ordenarDeMayorAMenorToolStripMenuItem_Click);
             // 
             // ordenarDeMenorAMayorToolStripMenuItem
             // 
+            this.ordenarDeMenorAMayorToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ordenarDeMenorAMayorToolStripMenuItem.Name = "ordenarDeMenorAMayorToolStripMenuItem";
-            this.ordenarDeMenorAMayorToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
+            this.ordenarDeMenorAMayorToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
             this.ordenarDeMenorAMayorToolStripMenuItem.Text = "Ordenar de Menor a Mayor";
+            this.ordenarDeMenorAMayorToolStripMenuItem.Click += new System.EventHandler(this.ordenarDeMenorAMayorToolStripMenuItem_Click);
             // 
             // convertirUnNumeroALiteralToolStripMenuItem
             // 
@@ -205,6 +197,18 @@
             this.convertirUnNumeroALiteralToolStripMenuItem.Size = new System.Drawing.Size(238, 22);
             this.convertirUnNumeroALiteralToolStripMenuItem.Text = "Convertir un numero a literal";
             this.convertirUnNumeroALiteralToolStripMenuItem.Click += new System.EventHandler(this.convertirUnNumeroALiteralToolStripMenuItem_Click);
+            // 
+            // vECTORToolStripMenuItem
+            // 
+            this.vECTORToolStripMenuItem.Name = "vECTORToolStripMenuItem";
+            this.vECTORToolStripMenuItem.Size = new System.Drawing.Size(63, 20);
+            this.vECTORToolStripMenuItem.Text = "VECTOR";
+            // 
+            // cONJUNTOToolStripMenuItem
+            // 
+            this.cONJUNTOToolStripMenuItem.Name = "cONJUNTOToolStripMenuItem";
+            this.cONJUNTOToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.cONJUNTOToolStripMenuItem.Text = "CONJUNTO";
             // 
             // panel1
             // 
@@ -217,23 +221,6 @@
             this.panel1.Size = new System.Drawing.Size(319, 110);
             this.panel1.TabIndex = 1;
             // 
-            // lblIntroduzca
-            // 
-            this.lblIntroduzca.AutoSize = true;
-            this.lblIntroduzca.Location = new System.Drawing.Point(21, 22);
-            this.lblIntroduzca.Name = "lblIntroduzca";
-            this.lblIntroduzca.Size = new System.Drawing.Size(112, 13);
-            this.lblIntroduzca.TabIndex = 0;
-            this.lblIntroduzca.Text = "Introduzca un Numero";
-            // 
-            // txbIntroduzcaNumero
-            // 
-            this.txbIntroduzcaNumero.Location = new System.Drawing.Point(154, 23);
-            this.txbIntroduzcaNumero.Name = "txbIntroduzcaNumero";
-            this.txbIntroduzcaNumero.Size = new System.Drawing.Size(125, 20);
-            this.txbIntroduzcaNumero.TabIndex = 1;
-            this.txbIntroduzcaNumero.Text = "0";
-            // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
@@ -243,6 +230,23 @@
             this.lblResultado.Size = new System.Drawing.Size(16, 24);
             this.lblResultado.TabIndex = 2;
             this.lblResultado.Text = ".";
+            // 
+            // txbIntroduzcaNumero
+            // 
+            this.txbIntroduzcaNumero.Location = new System.Drawing.Point(154, 23);
+            this.txbIntroduzcaNumero.Name = "txbIntroduzcaNumero";
+            this.txbIntroduzcaNumero.Size = new System.Drawing.Size(125, 20);
+            this.txbIntroduzcaNumero.TabIndex = 1;
+            this.txbIntroduzcaNumero.Text = "0";
+            // 
+            // lblIntroduzca
+            // 
+            this.lblIntroduzca.AutoSize = true;
+            this.lblIntroduzca.Location = new System.Drawing.Point(21, 22);
+            this.lblIntroduzca.Name = "lblIntroduzca";
+            this.lblIntroduzca.Size = new System.Drawing.Size(112, 13);
+            this.lblIntroduzca.TabIndex = 0;
+            this.lblIntroduzca.Text = "Introduzca un Numero";
             // 
             // lblNumLetras
             // 

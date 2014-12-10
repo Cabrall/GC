@@ -113,6 +113,20 @@ namespace Enteros
             entero.set(int.Parse(txbIntroduzcaNumero.Text));
             lblResultado.Text = "{ " + entero.eliminarPrimos() + " }";
         }
+
+        private void ordenarDeMenorAMayorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Enteros.Negocio.Entero entero = new Enteros.Negocio.Entero();
+            entero.set(int.Parse(txbIntroduzcaNumero.Text));
+            lblResultado.Text = "{ " + entero.OrdenarMenoMayor() + " }";
+        }
+
+        private void ordenarDeMayorAMenorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Enteros.Negocio.Entero entero = new Enteros.Negocio.Entero();
+            entero.set(int.Parse(txbIntroduzcaNumero.Text));
+            lblResultado.Text = "{ " + entero.OrdenarMayorMenor() + " }";
+        }
            
 
        
